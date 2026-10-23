@@ -1,0 +1,326 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>باقة باحة الورد</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<style>
+  /* Layout: single column, right-aligned RTL document; numbered sections as a
+     left rail of badges, one wide content column, data blocks as bordered tables. */
+  :root {
+    --bg: #FFFFFF;
+    --surface: #FAF7F8;
+    --ink: #1C1F26;
+    --muted: #666E7C;
+    --line: #E7DEE2;
+    --accent: #8E1F3C;
+    --accent-soft: #FBF2F5;
+    --leaf: #3F6B52;
+    --display: "Tajawal", "Segoe UI", sans-serif;
+    --body: "IBM Plex Sans Arabic", "Tajawal", "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14161A;
+      --surface: #1B1E24;
+      --ink: #ECEAEB;
+      --muted: #9BA3B0;
+      --line: #2E333B;
+      --accent: #E8899F;
+      --accent-soft: #241A1F;
+      --leaf: #8FBFA3;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14161A;
+    --surface: #1B1E24;
+    --ink: #ECEAEB;
+    --muted: #9BA3B0;
+    --line: #2E333B;
+    --accent: #E8899F;
+    --accent-soft: #241A1F;
+    --leaf: #8FBFA3;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.9;
+    direction: rtl;
+    text-align: right;
+  }
+  .wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 40px 64px;
+  }
+  h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; }
+  p { margin: 0; }
+  ul { margin: 0; padding: 0; list-style: none; }
+
+  /* ---- header ---- */
+  .eyebrow {
+    font-size: 12px; letter-spacing: .14em; color: var(--accent);
+    font-weight: 600; margin-bottom: 10px;
+  }
+  h1 { font-size: clamp(32px, 7vw, 46px); font-weight: 800; color: var(--accent); line-height: 1.25; }
+  .sub { font-size: clamp(17px, 3.4vw, 21px); font-weight: 500; margin-top: 6px; font-family: var(--display); }
+  .intro { color: var(--muted); margin-top: 18px; max-width: 62ch; }
+  .hr { height: 1px; background: var(--line); margin-block: 32px; border: 0; }
+
+  /* ---- price ---- */
+  .price {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 14px;
+    background: var(--accent-soft); border-right: 4px solid var(--accent);
+    padding: 20px 22px; border-radius: 3px;
+  }
+  .price b { font-family: var(--display); font-size: 38px; font-weight: 800; color: var(--accent); line-height: 1; }
+  .price span { color: var(--muted); font-size: 15px; }
+  .price .terms { flex-basis: 100%; font-size: 14px; color: var(--muted); }
+
+  /* ---- stats ---- */
+  .stats {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    border: 1px solid var(--line); border-radius: 3px; margin-top: 18px;
+    font-variant-numeric: tabular-nums;
+  }
+  .stats div { padding: 16px 10px; text-align: center; border-left: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .stats div:nth-child(3n) { border-left: 0; }
+  .stats div:nth-child(n+4) { border-bottom: 0; }
+  .stats b { display: block; font-family: var(--display); font-size: 26px; font-weight: 800; color: var(--accent); line-height: 1.3; }
+  .stats span { font-size: 13px; color: var(--muted); }
+  @media (max-width: 460px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .stats div { border-left: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .stats div:nth-child(3n) { border-left: 1px solid var(--line); }
+    .stats div:nth-child(2n) { border-left: 0; }
+    .stats div:nth-last-child(-n+2) { border-bottom: 0; }
+  }
+
+  /* ---- sections ---- */
+  .sec { margin-top: 38px; }
+  .sec-head { display: flex; align-items: center; gap: 12px; border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+  .num {
+    flex: 0 0 auto; width: 26px; height: 26px; line-height: 26px; text-align: center;
+    background: var(--accent); color: var(--bg); font-family: var(--display);
+    font-size: 13px; font-weight: 700; border-radius: 2px;
+  }
+  .sec-head h2 { font-size: clamp(18px, 3.6vw, 21px); font-weight: 700; color: var(--accent); min-width: 0; }
+  .lead { color: var(--muted); font-size: 15px; margin-top: 12px; max-width: 64ch; }
+  h3 { font-size: 16px; font-weight: 700; margin-top: 18px; }
+  .sec ul { margin-top: 10px; display: flex; flex-direction: column; gap: 7px; }
+  .sec li { position: relative; padding-right: 18px; min-width: 0; }
+  .sec li::before {
+    content: ""; position: absolute; right: 0; top: .82em;
+    width: 7px; height: 1px; background: var(--accent);
+  }
+  .sec li b { font-weight: 600; }
+
+  /* ---- plan table ---- */
+  .block { margin-top: 38px; border: 1px solid var(--line); border-radius: 3px; padding: 20px 22px; }
+  .block.soft { background: var(--surface); }
+  .block h2 { font-size: 18px; font-weight: 700; color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+  td { border-top: 1px solid var(--line); padding: 11px 0; vertical-align: top; font-size: 15px; }
+  tr:first-child td { border-top: 0; }
+  td.wk { width: 7.5em; font-family: var(--display); font-weight: 700; color: var(--accent); white-space: nowrap; }
+  td.wd { color: var(--muted); min-width: 0; }
+
+  .block ul { margin-top: 12px; display: flex; flex-direction: column; gap: 7px; font-size: 15px; }
+  .block li { position: relative; padding-right: 20px; min-width: 0; }
+  .block li::before { position: absolute; right: 0; top: 0; }
+  .excl li::before { content: "×"; color: var(--accent); font-weight: 700; }
+  .terms-list li::before { content: "•"; color: var(--leaf); font-weight: 700; }
+
+  /* ---- closing ---- */
+  .closing { margin-top: 38px; border-top: 2px solid var(--accent); padding-top: 18px; }
+  .closing h2 { font-size: 17px; font-weight: 700; }
+  .closing p { color: var(--muted); margin-top: 8px; max-width: 64ch; }
+</style>
+
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">عرض خدمة · إدارة وتشغيل متجر إلكتروني</p>
+    <h1>باحة الورد</h1>
+    <p class="sub">باقة إدارة وتشغيل المتجر الإلكتروني على منصة سلة</p>
+    <p class="intro">
+      باقة شهرية متكاملة هدفها زيادة مبيعات المتجر عبر ثلاثة محاور: جلب زيارات حقيقية من محركات
+      البحث، تحويل هذه الزيارات إلى طلبات، ثم إعادة العميل للشراء مرة أخرى. كل بند في هذه الباقة
+      مرتبط بنتيجة قابلة للقياس تظهر في التقارير الأسبوعية والشهرية.
+    </p>
+  </header>
+
+  <hr class="hr">
+
+  <div class="price">
+    <b>550 ريال</b>
+    <span>شهرياً</span>
+    <p class="terms">شامل جميع البنود المذكورة في هذا العرض · الحد الأدنى للتعاقد 3 شهور</p>
+  </div>
+
+  <div class="stats">
+    <div><b>10</b><span>مقالات شهرياً</span></div>
+    <div><b>50</b><span>منتجاً في الشهر الأول</span></div>
+    <div><b>4</b><span>بنرات شهرياً</span></div>
+    <div><b>3</b><span>ساعات تطوير شهرياً</span></div>
+    <div><b>5</b><span>تقارير شهرياً</span></div>
+    <div><b>550</b><span>ريال شهرياً</span></div>
+  </div>
+
+  <section class="sec">
+    <div class="sec-head"><span class="num">1</span><h2>المحتوى و SEO — المحرك الأساسي للباقة</h2></div>
+    <p class="lead">
+      الهدف: أن يظهر المتجر في نتائج جوجل أمام كل من يبحث عن هدية في الرياض، وأن نبني له أصلاً
+      تسويقياً دائماً لا يتوقف أثره بانتهاء الشهر.
+    </p>
+    <h3>10 مقالات شهرياً — بالتصميم والصور</h3>
+    <ul>
+      <li>مقالات مستهدفة لكلمات بحث حقيقية يبحث عنها العميل قبل شراء الهدية</li>
+      <li>تركيز على مدينة الرياض والمناسبات السعودية</li>
+      <li>كل مقال مربوط بمنتجات وتصنيفات المتجر مباشرة لتحويل الزائر إلى مشترٍ</li>
+      <li>120 مقالاً خلال السنة تبقى تعمل لصالح المتجر بشكل دائم</li>
+    </ul>
+    <h3>تحسين المتجر تقنياً</h3>
+    <ul>
+      <li>ضبط عناوين ووصف الصفحات (Meta Title / Description) للرئيسية والتصنيفات وأهم المنتجات</li>
+      <li>تحسين روابط الصفحات ونصوص الصور البديلة (Alt Text)</li>
+      <li>إنشاء صفحات تجميعات للمناسبات: هدايا تخرج · مواليد · عرسان · شكر وتقدير</li>
+      <li>إنشاء وضبط Google Business Profile — أهم مصدر زيارات لمتجر توصيل محلي في الرياض</li>
+    </ul>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head"><span class="num">2</span><h2>إدارة المنتجات</h2></div>
+    <ul>
+      <li>رفع 50 منتجاً كاملة خلال الشهر الأول</li>
+      <li>كتابة وصف بيعي لكل منتج مبني على كلمات البحث — وليس مجرد اسم وسعر</li>
+      <li>تنظيم التصنيفات حسب المناسبة والفئة السعرية لتسهيل الشراء</li>
+      <li>ضبط صور المنتجات وعناوينها بما يخدم ظهورها في البحث</li>
+    </ul>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head"><span class="num">3</span><h2>الأساسيات التسويقية</h2></div>
+    <ul>
+      <li>خطة عروض سنوية مربوطة بالتقويم السعودي: يوم التأسيس · اليوم الوطني · العيدان · موسم التخرج · رمضان · مواسم الأعراس</li>
+      <li>إعداد وتفعيل الكوبونات والعروض داخل المنصة</li>
+      <li>تفعيل السلات المتروكة ورسائل استرجاع العملاء</li>
+      <li>إضافة خدمات مكمّلة للطلب (كرت إهداء · بالونات · تغليف فاخر · شوكولاتة) لرفع متوسط قيمة الطلب</li>
+      <li>تفعيل طلب تقييم العميل بعد التسليم لبناء الثقة في المتجر</li>
+    </ul>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head"><span class="num">4</span><h2>التصميم</h2></div>
+    <ul>
+      <li>4 بنرات شهرياً: بنر رئيسي + بنرات المناسبات والعروض</li>
+      <li>تصاميم وصور المقالات العشرة كاملة</li>
+      <li>تحديث واجهة الصفحة الرئيسية مع كل موسم ومناسبة</li>
+    </ul>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head"><span class="num">5</span><h2>التعديلات البرمجية — حتى 3 ساعات شهرياً</h2></div>
+    <p class="lead">
+      تعديلات داخل الثيم تشمل التصميم والوظائف وتحسين تجربة الشراء، وأهم تعديل مقترح للمتجر في
+      وضعه الحالي:
+    </p>
+    <h3>تطوير نموذج الهدايا في صفحة إتمام الطلب</h3>
+    <ul>
+      <li>حقول مخصصة: اسم المستلم · رقم جواله · نص رسالة الإهداء</li>
+      <li>اختيار تاريخ ووقت التسليم المفضل والمنطقة داخل الرياض</li>
+      <li>خيار (مفاجأة) لعدم إخبار المستلم باسم المرسل</li>
+      <li><b>الأثر المباشر:</b> تقليل التنسيق اليدوي مع المستلمين وتقليل أخطاء التسليم</li>
+    </ul>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head"><span class="num">6</span><h2>التقارير — متابعة كاملة لأداء المتجر</h2></div>
+    <h3>تقرير أسبوعي</h3>
+    <ul>
+      <li>المبيعات وعدد الطلبات ومتوسط قيمة الطلب</li>
+      <li>الزيارات ومصادرها</li>
+      <li>أكثر المنتجات مبيعاً خلال الأسبوع</li>
+      <li>ما تم تنفيذه: مقالات · بنرات · تعديلات · تحسينات</li>
+      <li>خطة الأسبوع القادم وأي ملاحظة تحتاج قراراً من صاحب المتجر</li>
+    </ul>
+    <h3>تقرير شهري شامل</h3>
+    <ul>
+      <li>أداء المتجر الكامل ومقارنته بالشهر السابق</li>
+      <li>أداء SEO: ترتيب الكلمات المستهدفة · الزيارات من جوجل · أداء المقالات</li>
+      <li>معدل التحويل والسلات المتروكة ونسبة العملاء المتكررين</li>
+      <li>أداء العروض والكوبونات</li>
+      <li>أعلى وأضعف المنتجات والتصنيفات</li>
+      <li>خطة الشهر القادم والتوصيات</li>
+    </ul>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head"><span class="num">7</span><h2>سجل المناسبات — ميزة إضافية</h2></div>
+    <ul>
+      <li>تسجيل تاريخ مناسبة كل مستلم عند كل طلب</li>
+      <li>تذكير المتجر قبل المناسبة بأسبوع في السنة التالية لإعادة استهداف العميل</li>
+      <li><b>الأثر:</b> تحويل المشتري لمرة واحدة إلى عميل متكرر — أقوى ورقة في سوق الهدايا</li>
+    </ul>
+  </section>
+
+  <div class="block">
+    <h2>خطة التنفيذ في الشهر الأول</h2>
+    <table>
+      <tr>
+        <td class="wk">الأسبوع الأول</td>
+        <td class="wd">مراجعة المتجر بالكامل · ضبط إعدادات السيو الأساسية · إنشاء Google Business Profile · بدء رفع المنتجات</td>
+      </tr>
+      <tr>
+        <td class="wk">الأسبوع الثاني</td>
+        <td class="wd">استكمال رفع الـ 50 منتجاً بأوصافها البيعية · إعادة تنظيم التصنيفات حسب المناسبة · أول بنرين للمتجر</td>
+      </tr>
+      <tr>
+        <td class="wk">الأسبوع الثالث</td>
+        <td class="wd">نشر أول دفعة مقالات · إنشاء صفحات تجميعات المناسبات · تفعيل السلات المتروكة والخدمات المكمّلة للطلب</td>
+      </tr>
+      <tr>
+        <td class="wk">الأسبوع الرابع</td>
+        <td class="wd">استكمال المقالات والبنرات · تنفيذ التعديلات البرمجية المتفق عليها · تسليم التقرير الشهري الأول وخطة الشهر التالي</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="block soft excl">
+    <h2>ما لا تشمله الباقة</h2>
+    <ul>
+      <li>الرد على العملاء أو التواصل المباشر مع المستلمين</li>
+      <li>الإعلانات المدفوعة (ميزانية وإدارة منفصلة)</li>
+      <li>تصوير المنتجات</li>
+      <li>تطوير ثيم كامل أو تطبيق</li>
+      <li>إضافة منتجات بعد الـ 50 الأولى (تُحسب منفصلة)</li>
+    </ul>
+  </div>
+
+  <div class="block terms-list">
+    <h2>شروط التعاقد</h2>
+    <ul>
+      <li>الحد الأدنى للتعاقد: 3 شهور</li>
+      <li>الدفع في بداية كل شهر</li>
+      <li>بيانات المنتجات وصورها مسؤولية صاحب المتجر</li>
+      <li>نتائج SEO تظهر تدريجياً خلال 3 إلى 4 شهور من بدء التنفيذ</li>
+    </ul>
+  </div>
+
+  <div class="closing">
+    <h2>لماذا التعاقد لثلاثة شهور؟</h2>
+    <p>
+      لأن هذه الباقة لا تبيع مجهوداً شهرياً مؤقتاً، بل تبني أصلاً دائماً للمتجر: مقالات وصفحات
+      تتصدر نتائج البحث، ووصف منتجات مكتوب للبيع، وتجربة شراء محسّنة. هذه الأصول تتراكم قيمتها
+      شهراً بعد شهر وتستمر في جلب الطلبات بعد انتهاء التعاقد.
+    </p>
+  </div>
+
+</div>
+
+</body></html>
